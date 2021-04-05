@@ -1,0 +1,249 @@
+/* Colour palette:
+#CCDFCB light mint
+#FF6A5C watermelon 
+#056571 teal
+#414141 matte black
+#535353 shadow grey
+#F8F8FF ghost white
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #F8F8FF; 
+    background-color: #414141;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: 'Biryani', sans-serif;
+    font-size: 4em;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: 'Biryani', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: 'Biryani', sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+/* Carousel for avatar images */
+
+.choose-avatar {
+    padding-top: 40px;
+}
+
+.seating-plan-heading {
+    padding-top: 40px;
+}
+
+.extra-space {
+    height: 100vh;
+}
+
+.carousel-inner img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+#avatarCarousel {
+    background-color: #414141;
+}
+
+/* Form to enter name */
+
+form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    display: inline-block;
+}
+
+form input[type=text] {
+    width: 300px;
+    border: none;
+    color: #414141;
+    background-color: #CCDFCB;
+    padding: 10px;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    color: #F8F8FF;
+    background-color: #056571;
+    width: 300px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    color: #414141;
+    background-color: #CCDFCB;
+}
+
+/* Modal box that pops up if no desks are available */
+.modal {
+    display: none; 
+    position: relative; 
+    z-index: 1; 
+    width: 80%; 
+    height: fit-content; 
+    overflow: auto; 
+    background-color: transparent;
+}
+  
+.modal-content {
+    color: #F8F8FF;
+    background-color: #FF6A5C;
+    font-family: 'Biryani', sans-serif;
+    font-size: 1em;
+    margin: 15% auto; 
+    padding: 20px;
+    border: none;
+    width: 80%; 
+}
+  
+.close {
+    color: #F8F8FF;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #414141;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Container for button to add another person */
+
+.seating-plan-buttons {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: stretch;
+    justify-content: space-between;
+    font-size: 1.8em;
+    margin-bottom: 40px;
+}
+
+.clear-all {
+    background-color: #FF6A5C;
+}
+
+button.clear-all:hover {
+    color: #F8F8FF;
+    background-color: #535353;
+}
+
+/* Seating plan */
+
+div.seating-plan {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+div.desk {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+}
+
+.not-in-use {
+    color: #F8F8FF;
+    background-color: #535353;
+}
+
+.available {
+    color: #414141;
+    background-color: #CCDFCB;
+}
+
+.occupied {
+    color: #F8F8FF;
+    background-color: #FF6A5C;
+}
+
+img.desk-image {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+/* Footer */
+
+footer {
+    color: #F8F8FF;
+    background-color: #056571;
+    height: 50px;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+    position: sticky;
+    bottom: 0;
+    overflow: hidden;
+    transition: height 1s ease-in;
+}
+
+footer:hover {
+    height: 80px;
+}
+
+footer p {
+    font-family: 'Biryani', sans-serif;
+    font-size: 1em;
+}
+
+footer a {
+    font-family: 'Biryani', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: #CCDFCB;
+    font-weight: bold;
+}
+
+.top-shadow {
+    box-shadow: 0 -8px 16px -8px black;
+}
+
+.socials {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
